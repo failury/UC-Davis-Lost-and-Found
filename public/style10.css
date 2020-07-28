@@ -1,0 +1,153 @@
+.collapsible {
+  background-color: #feebb1;
+  color: white;
+  cursor: pointer;
+  padding: 8px;
+  border: none;
+  text-align: left;
+  outline: none;
+  margin-top: 1%;
+  display: none;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.active,
+.collapsible:hover {
+  background-color: #feebb1;
+}
+
+.content {
+  padding: 8px;
+  display: none;
+  overflow: hidden;
+  background-color: #feebb1;
+  flex-direction: column;
+}
+.descriptionbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2%;
+}
+.edit-button {
+  align-self: flex-end;
+  border: none;
+  border-radius: 5px;
+  background-color: #142a50;
+  height: 20px;
+  font-family: montserrat;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin-left: 10%;
+  margin-right: 10%;
+  justify-content: center;
+}
+.title {
+  color: #142a50;
+  font-family: Montserrat;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.logo {
+  width: 200px;
+  height: auto;
+  margin: none;
+  align-self: flex-end;
+  cursor:pointer;
+}
+.text {
+  font-family: Montserrat;
+  color: #142a50;
+}
+.more {
+  font-family: Montserrat;
+  color: #142a50;
+  font-weight: 700;
+  display: block;
+}
+.column {
+  display: flex;
+  flex-direction: row;
+}
+.information {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+}
+.top {
+  display: flex;
+}
+.blackbold {
+  padding-right: 10px;
+  font-family: montserrat;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  padding-bottom: 8px;
+}
+.normalback {
+  font-family: montserrat;
+  font-size: 12px;
+  font-weight: 100;
+  align-self: flex-end;
+}
+.smalltext {
+  padding-bottom: 8px;
+  font-family: Montserrat;
+  color: #142a50;
+  font-size: 10px;
+}
+.image {
+  width: 100px;
+  height: 100px;
+}
+.less {
+  align-self: flex-end;
+  font-family: Montserrat;
+  color: #142a50;
+  font-weight: 700;
+}
+@media (min-width: 769px) {
+  .title {
+    font-size: 5vh;
+  }
+  .collapsible {
+    min-height: 6vh;
+  }
+  .image {
+    width: 200px;
+    height: 200px;
+  }
+  .text {
+    font-size: 3vh;
+  }
+  .blackbold {
+    font-size: 3vh;
+  }
+  .more {
+    font-size: 3vh;
+  }
+  .less {
+    font-size: 3vh;
+  }
+  .normalback {
+    font-size: 3vh;
+  }
+  .smalltext {
+    font-size: 2.5vh;
+  }
+  .edit-button {
+    height: 40px;
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+}

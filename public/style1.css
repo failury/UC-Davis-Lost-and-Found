@@ -1,0 +1,139 @@
+@charset "utf-8";
+body {
+  background-color: #365c85;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.Shields {
+  width: 100%;
+  height: 40vh;
+}
+.logo {
+  max-width: 70%;
+}
+
+.google-icon {
+  width: auto;
+  height: 90%;
+  padding-left: 5%;
+  padding-top: 1%;
+}
+.google-button {
+  display: flex;
+  width: 50%;
+  font-size: medium;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  height: 40px;
+  font-family: montserrat;
+  color: white;
+  margin-top:10vw;
+}
+button {
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  font-family: montserrat;
+  color: black;
+  width:100%;
+}
+.bottom {
+  margin-top: 10%;
+  display: flex;
+  background-color: #365c85;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  cursor: pointer;
+  transition: all 5s ease-in-out;
+}
+#popup {
+  margin: 70px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 50%;
+  height: 20%;
+  position: relative;
+  top: 20%;
+  font-weight: bold;
+  color:red;
+  text-align: center;
+  font-size: 5vh;
+}
+
+.close {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  transition: all 5s ease-in-out;
+}
+
+
+
+
+
+
+
+
+@media (min-width: 769px) {
+  main {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .Shields {
+    width: 50vw;
+    height: 100vh;
+  }
+
+  .bottom {
+  display: flex;
+  width:50vw;
+  background-color: #365c85;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
+}
+  .logo {
+  max-width: 70%;
+}
+  .google-button {
+  margin-top: 5%;
+  height: 60px;
+
+}
+  button{
+    justify-content: center;
+    font-size:1.5vw;
+  }
+  
+}

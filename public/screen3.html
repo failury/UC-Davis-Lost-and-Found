@@ -1,0 +1,105 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Log Found Item</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/reset.css" />
+    <link rel="stylesheet" href="/style3.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <img src="assets/Logo.png" alt="" width="500" height="183" class="logo" onclick="location.href = '/screen2.html';"/>
+    <div class="title">Input the found item&nbsp;</div>
+    <div class="prompt" id="prompt2">
+      <p class="text">Date &amp; Time</p>
+      <div class="timecontainer">
+        <input
+          type="text"
+          class="date"
+          id = "dateinput"
+          placeholder=""
+          onfocus="(this.type='date')"
+          min="2000-01-01"
+          max="2020-12-31"
+        />
+        <input
+          type="text"
+          class="time"
+          id = "timeinput"
+          placeholder=""
+          onfocus="(this.type='time')"
+          min="00:00"
+          max="12:00"
+          required
+        />
+      </div>
+      <p class="text">Location</p>
+        <input class="textinput" id="search-input" onkeypress="if(event.keyCode === 13)search();"  />
+      <div id="map"></div>
+      <div id="coordinates">
+        
+      </div>
+      
+      <button class="next-button" id="SubmitItem">Submit</button>
+    </div>
+    <div class="prompt" id="prompt1">
+      <p class="text">Title</p>
+      <div class="textinput" id="titleinput" contenteditable="true"></div>
+      <p class="text">Category</p>
+      <input list="category" name="browser" class ="textinput" id="categoryinput" />
+  <datalist id="category">
+    <option value="Computers or Tablets ">
+    <option value="Cell Phones, Smart Watches & Accessories">
+    <option value="Cameras & Photo">
+    <option value="Headphones or Portable Audio">
+    <option value="Backpacks">
+    <option value="Other">
+  </datalist>
+      <p class="text">Description</p>
+      <div
+        class="textinput bigtextbox"
+        id="descriptioninput"
+        contenteditable="true"
+      ></div>
+      <p class="text">Attach a photo (optional)</p>
+      <div class="upload">
+          <div class="imageWrapper">
+            <img id="serverImage" src="data:," alt="" />
+          </div>
+          <label for="fileChooser" id="chooserlable"  
+            >Choose File</label>
+          <input
+            type="file"
+            id="fileChooser"
+            accept="image/png, .jpeg, .jpg, image/gif"
+          />
+      </div>
+      <button class="next-button" id="next">Next</button>
+    </div>
+    <div class="title">Or search for existing requests</div>
+    <div class="searchbar" onclick="location.href = 'screen5.html'">
+
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </div>
+    <script src="/script3.js"></script>
+    <script src="/mapScript.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfs2_lLclMoDed1A-4Oajjq7ym4cAcsZ8&callback=initMap"
+      async
+      defer
+    ></script>
+  </body>
+</html>
