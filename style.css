@@ -1,0 +1,19 @@
+@charset "utf-8";
+main{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+button {
+  font-size: medium;
+  border: none;
+  border-radius: 10px;
+  background-color: #142a50;
+  width: 40%;
+  height: 40px;
+  font-family: montserrat;
+  font-weight: 700;
+  color: white;
+  margin: 2%;
+}

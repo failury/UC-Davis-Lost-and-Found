@@ -1,0 +1,158 @@
+@charset "utf-8";
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #feebb1;
+  margin-left: 10%;
+  margin-right: 10%;
+  justify-content: center;
+}
+.prompt {
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  height: 70vh
+}
+#chooserlable {
+  align-self: flex-start;
+  border: none;
+  background-color: #e5e5e5;
+  font-family: Montserrat;
+  color: #142a50;
+}
+.prompt .next-button {
+  align-self: flex-end;
+  border: none;
+  border-radius: 5px;
+  background-color: #daab27;
+  width: 35%;
+  height: 7%;
+  font-family: montserrat;
+  font-weight: 700;
+  color: white;
+  position:relative;
+  margin-bottom:2vh;
+  cursor:pointer;
+  margin-top: 3vh;
+}
+.prompt .textinput.bigtextbox {
+  min-height: 100px;
+}
+.searchbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.searchbar input {
+  width: 92%;
+  border: none;
+  padding: 1%;
+}
+.searchbar button {
+  border: none;
+  width: 8%;
+  background-color: white;
+  color: #142a50;
+}
+.prompt .text {
+  font-family: Montserrat;
+  color: #142a50;
+  margin-top:3%;
+  margin-bottom:2%;
+  
+}
+.prompt .textinput {
+  background-color: #e5e5e5;
+  border: none;
+  margin-bottom:2%;
+  height:20px
+}
+.logo {
+  width: 200px;
+  height: auto;
+  margin: none;
+  align-self: flex-end;
+  cursor:pointer;
+}
+.title {
+  font-size: 5.5vw;
+  color: #142a50;
+  font-family: Montserrat;
+  font-weight: 700;
+}
+.bigtextbox {}
+.prompt .textinput.bigtextbox {}
+.timecontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+	height:20px
+}
+.time {
+  border: none;
+  background-color: #e5e5e5;
+  width: 15%;
+  height:20px
+}
+.date {
+  border: none;
+	height:inherit;
+  background-color: #e5e5e5;
+  margin-right:2vw;
+  width: 30%;
+  height:20px;
+}
+#prompt1 {}
+#prompt2 {}
+#map {
+  width: 100%;
+  height: 30vh;
+  margin-top: 1%;
+}
+#coordinates {
+  display: none;
+}
+.upload input {
+  border: none;
+  display: none;
+}
+
+.to{
+    font-family: Montserrat;
+  color: #142a50;
+  font-size:100%;
+  padding-left:1.5vw;
+  padding-right:1.5vw;
+}
+
+@media (min-width: 769px) {
+  .logo {
+    width: 20vw;
+  }
+  .title {
+    font-size: 3vw;
+  }
+  body {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  .prompt{
+    height: 65vh;
+  }
+  .prompt .text {
+  font-family: Montserrat;
+  color: #142a50;
+  margin-top: 1.5%;
+  margin-bottom: 1%;
+}
+.prompt .textinput {
+  min-height: 25px;
+  margin-bottom:1%;
+}
+  
+
+}

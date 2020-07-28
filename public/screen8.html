@@ -1,0 +1,103 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Search For Exisiting Found Items</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/reset.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="/style8.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+    <img src="assets/Logo.png" alt="" width="500" height="183" class="logo" onclick="location.href = '/screen2.html';"/>
+    <div class="title">Search for existing items</div>
+<div class="searchbar">
+  <input type="text" placeholder="Title (Optional)" name="search" id="titleinput" />
+      <button type="submit" class = "SubmitItem"><i class="fa fa-search"></i></button>
+    </div>
+    <div class="prompt" id="prompt2">
+      <p class="text">Date &amp; Time</p>
+      <div class="timecontainer">
+        <input
+          type="text"
+          class="date"
+          id = "dateinput"
+          placeholder="Optional"
+          onfocus="(this.type='date')"
+          min="2000-01-01"
+          max="2020-12-31"
+        />
+        <input
+          type="text"
+          class="time"
+          id = "timeinput"
+          placeholder="Optional"
+          onfocus="(this.type='time')"
+          min="00:00"
+          max="12:00"
+          required
+        />
+        <div class="to">to</div>
+        <input
+          type="text"
+          value=""
+          class="date"
+          id = "dateinput2"
+          placeholder="Optional"
+          onfocus="(this.type='date')"
+          min="2000-01-01"
+          max="2020-12-31" 
+        />
+        <input
+          type="text"
+          class="time"
+          value=""
+          id = "timeinput2"
+          placeholder="Optional"
+          onfocus="(this.type='time')"
+          min="00:00"
+          max="12:00"
+          required
+        />
+            </div>
+            <p class="text">Category</p>
+            <input list="category" name="browser" class ="textinput" id="categoryinput" placeholder="Optional" />
+  <datalist id="category">
+    <option value="Computers or Tablets ">
+    <option value="Cell Phones, Smart Watches & Accessories">
+    <option value="Cameras & Photo">
+    <option value="Headphones or Portable Audio">
+    <option value="Backpacks">
+    <option value="Other">
+  </datalist>
+      <p class="text">Location</p>
+        <input class="textinput" id="search-input" onkeypress="if(event.keyCode === 13)search();" placeholder="Optional (Drag Marker if Needed)" />
+
+      <div id="map"></div>
+      <div id="coordinates">
+        
+      </div>
+      
+      <button class="next-button SubmitItem">Search&nbsp;</button>
+    </div>
+        <script src="/script8.js"></script>
+    <script src="/mapScript.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfs2_lLclMoDed1A-4Oajjq7ym4cAcsZ8&callback=initMap"
+      async
+      defer
+    ></script>
+  </body>
+</html>
